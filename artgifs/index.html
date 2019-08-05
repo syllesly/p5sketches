@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style type="text/css">
+        body {margin:0; padding:0;} /* remove top and left whitespace */
+        canvas {display:block;}    /* remove scrollbars */
+      canvas:focus {outline:0;} /* remove blue outline around canvas */
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.min.js"></script>
+    <script src="CCapture.all.min.js"></script>
+    <script src="js/gif.worker.js"></script>
+    <script src="sketch.js"></script>
+    <script>
+        var capturer = new CCapture( {
+            framerate: 60,
+            format: 'gif',
+            workersPath: './js/',
+            verbose: true
+        } );
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
